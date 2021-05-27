@@ -1,5 +1,5 @@
 import joblib
-experience = float(input("Enter Your Year Experiences:-"))
+experience = float(input("\nEnter Your Year Experiences:-"))
 model=joblib.load("salary.h5")
 salary=model.predict([[ experience ]])
-print(f"Based On Your {experience} Years Of Experience, The Company Would be Provide You the {salary} bucks Salary!!! ")
+print(f"\nBased On Your {experience} Years Of Experience, The Company Would be Provide You the {salary} bucks Salary!!! \n")
